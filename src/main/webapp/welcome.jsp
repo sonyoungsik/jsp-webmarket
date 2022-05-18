@@ -1,12 +1,12 @@
 <%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import = "java.util.Date" %>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>welcome.jsp</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@ String tagline = "Welcome to Web Market!"; %>
         
         SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss a");
         
-        out.println("ÇöÀç Á¢¼Ó ½Ã°£ : " + format.format(today));
+        out.println("í˜„ìž¬ ì ‘ì† ì‹œê°„ : " + format.format(today));
         %>
 	</div>
     <hr>
