@@ -10,17 +10,11 @@
 
 <body>
 
-<%!
-// 선언문 : 자바 변수나 메소드를 정의하는데 사용
-%>
+<%! String greeting = "Welcome to Web Shopping Mall";
+String tagline = "Welcome to Web Market!"; %>
 
-<%
-// 스크립틀릿 : 자바 로직 코드를 작성하는데 사용
-%>
-
-<%=
-// 표현문 : 변수, 계산식, 메소드 호출 결과를 문자열 형태로 출력할 때 사용
-%>
+<h1><%= greeting %></h1>
+<h3><%= tagline %></h3>
 
 </body>
 
