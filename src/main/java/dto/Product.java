@@ -1,9 +1,13 @@
 package dto;
 
+import java.io.Serializable;
+
 // 모델 클래스 작성
 // JSP : 자바빈즈 (getter / setter, 기본 생성자(필드 없는거), Serializable 등 생성 필수)
 
-public class Product {
+public class Product implements Serializable {
+
+	private static final long serialVersionUID = 2867748905925104542L;
 
 	private String productId;
 	private String name;
