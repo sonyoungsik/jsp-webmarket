@@ -22,13 +22,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="container">
-        <div class="navbar-header">
-        <a class="navbar-brand" href="./welcome.jsp">Home</a>
-        </div>
-    </div>
-</nav>
+<jsp:include page="menu.jsp" />
 
 <%! String greeting = "Welcome to Web Shopping Mall";
 String tagline = "Welcome to Web Market!"; %>
@@ -53,19 +47,7 @@ String tagline = "Welcome to Web Market!"; %>
     <hr>
 </div>
 
-<footer class="container">
-	<p>&copy; WebMarket</p>
-</footer>
-
-	<%
-	//ProductRepository repository = new ProductRepository();
-	List<Product> products = repository.getAllProducts();
-	
-	for(Product product: products){
-		out.println(product +"<br><br>");
-	}
-		
-	%>
+<jsp:include page="footer.jsp"></jsp:include>
 
 </body>
 
