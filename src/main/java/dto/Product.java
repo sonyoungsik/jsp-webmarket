@@ -2,6 +2,7 @@ package dto;
 
 import java.io.Serializable;
 
+
 // �� Ŭ���� �ۼ�
 // JSP : �ڹٺ��� (getter / setter, �⺻ ������(�ʵ� ���°�), Serializable �� ���� �ʼ�)
 
