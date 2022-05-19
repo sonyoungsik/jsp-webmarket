@@ -38,6 +38,7 @@ String tagline = "Welcome to Web Market!"; %>
         <h3 class="p-3"><%= tagline %></h3>
         <%
         
+        //1초에 한번씩 새로고침 할 때 사용하는 문법입니다...
         response.setIntHeader("Refresh", 1);
         
         Date today = new Date();
