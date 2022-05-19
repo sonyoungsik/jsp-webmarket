@@ -2,8 +2,8 @@ package dto;
 
 import java.io.Serializable;
 
-// ¸ðµ¨ Å¬·¡½º ÀÛ¼º
-// JSP : ÀÚ¹ÙºóÁî (getter / setter, ±âº» »ý¼ºÀÚ(ÇÊµå ¾ø´Â°Å), Serializable µî »ý¼º ÇÊ¼ö)
+// ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
+// JSP : ï¿½Ú¹Ùºï¿½ï¿½ï¿½ (getter / setter, ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Êµï¿½ ï¿½ï¿½ï¿½Â°ï¿½), Serializable ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¼ï¿½)
 
 public class Product implements Serializable {
 
@@ -92,4 +92,16 @@ public class Product implements Serializable {
 		this.condition = condition;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [productId=" + productId + ", name=" + name + ", unitPrice=" + unitPrice + ", description="
+				+ description + ", manufacturer=" + manufacturer + ", category=" + category + ", unitsInStock="
+				+ unitsInStock + ", condition=" + condition + "]";
+	}
+
+	
+	
+	
+	
+	
 }
