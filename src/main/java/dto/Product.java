@@ -4,8 +4,12 @@ import java.io.Serializable;
 
 //모델 클래스
 //JSP : 자바빈즈 (getter/setter, 기본 생성자(매개변수 없음), Serializable - 주소값 지정)
-public class Product implements Serializable {
 
+//public class Product implements Serializable { // implement ~ 생략해도 됩니다...
+// javabeans는 getter-setter만 있으면 자바빈즈로 해석합니다...
+
+public class Product {
+	
 	private static final long serialVersionUID = 2867748905925104542L;
 
 	private String productId;
