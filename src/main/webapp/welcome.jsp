@@ -37,6 +37,9 @@ String tagline = "Welcome to Web Market!"; %>
     <div class="text-center">
         <h3 class="p-3"><%= tagline %></h3>
         <%
+        
+        response.setIntHeader("Refresh", 1);
+        
         Date today = new Date();
         
         SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss a");
