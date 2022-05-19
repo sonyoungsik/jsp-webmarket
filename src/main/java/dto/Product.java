@@ -2,9 +2,8 @@ package dto;
 
 import java.io.Serializable;
 
-
-//¸ğµ¨ Å¬·¡½º
-//JSP : ÀÚ¹ÙºóÁî (getter/setter, ±âº» »ı¼ºÀÚ, Serializable)
+//ëª¨ë¸ í´ë˜ìŠ¤
+//JSP : ìë°”ë¹ˆì¦ˆ (getter/setter, ê¸°ë³¸ ìƒì„±ì(ë§¤ê°œë³€ìˆ˜ ì—†ìŒ), Serializable - ì£¼ì†Œê°’ ì§€ì •)
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 2867748905925104542L;
