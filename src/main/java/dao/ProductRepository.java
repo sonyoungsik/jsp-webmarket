@@ -28,7 +28,7 @@ public class ProductRepository {
 		Product tablet = new Product("P1236", "Galaxy Tab S", 900000);
 		tablet.setDescription("212.8*125.6*6.6mm, Super AMOLED display, Octa-Core processor");
 		tablet.setCategory("Tablet");
-		tablet.setManufacturer("Apple");
+		tablet.setManufacturer("Samsung");
 		tablet.setUnitsInStock(1000);
 		tablet.setCondition("Old");
 		
