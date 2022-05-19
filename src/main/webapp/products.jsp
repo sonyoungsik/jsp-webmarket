@@ -16,15 +16,42 @@
 </head>
 <body>
 <jsp:include page="menu.jsp" />
+
+<div class="p-5 bg-secondary text-white text-white">
+    <div class ="container">
+        <h1 class="display-3">상품목록</h1>
+    </div>
+</div>
+
 	<%
 	//ProductRepository repository = new ProductRepository();
 	List<Product> products = repository.getAllProducts();
-	
-	for(Product product: products){
-		out.println(product +"<br><br>");
-	}
 		
 	%>
+	
+	<div class="container">
+    <div class="row text-center">
+    <%
+    for(Product product : products){
+    %>
+            <div class="col-md-4">
+            <h3><%= product.getName() %></h3>
+            <p><%= product.getDescription() %></p>
+            <p><%= product.getUnitPrice() %></p>
+            </div>
+    
+    <%
+    }
+    %>	
+        <!-- <div class="col-md-4">1</div>
+    	<div class="col-md-4">2</div>
+        <div class="col-md-4">3</div>
+     -->
+     </div>
+</div>
+
 <jsp:include page="footer.jsp" />
+
 </body>
+
 </html>
