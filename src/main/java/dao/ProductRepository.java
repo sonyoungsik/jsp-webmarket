@@ -40,4 +40,19 @@ public class ProductRepository {
 	public List<Product> getAllProducts(){
 		return products;
 	}
+	
+	//상품 ID로 상품을 찾기
+
+	public Product getProductById(String productId) {
+		return products // 동일한 기존 코드(for문) 교재 p.173을 참고하시기 바랍니다...
+				.stream() // 상품 3개가 흘러갑니다...
+				.filter((product) -> product.getProductId().equals(productId)) // 망에 걸칠 조건을 설정합니다...
+				.findFirst() // 가장 먼저 걸린 것을 찾습니다...
+				.get(); // 가장 먼저 걸린 녀석을 get합니다...
+	}
+	
+	
+	
+	
+	
 }
