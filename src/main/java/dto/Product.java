@@ -3,9 +3,8 @@ package dto;
 import java.io.Serializable;
 
 
-// ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
-// JSP : ï¿½Ú¹Ùºï¿½ï¿½ï¿½ (getter / setter, ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Êµï¿½ ï¿½ï¿½ï¿½Â°ï¿½), Serializable ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¼ï¿½)
-
+//¸ðµ¨ Å¬·¡½º
+//JSP : ÀÚ¹ÙºóÁî (getter/setter, ±âº» »ý¼ºÀÚ, Serializable)
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 2867748905925104542L;
