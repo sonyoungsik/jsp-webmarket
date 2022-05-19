@@ -24,7 +24,7 @@
 
 <jsp:include page="menu.jsp" />
 
-<%! String greeting = "Welcome to Web Shopping Mall";
+<%! String greeting = "웹 쇼핑몰에 오신 것을 환영합니다.";
 String tagline = "Welcome to Web Market!"; %>
 
 <div class="p-5 bg-secondary text-white text-white">
