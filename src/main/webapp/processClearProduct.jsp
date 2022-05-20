@@ -9,5 +9,5 @@ ProductRepository repository = ProductRepository.getInstance();
 
 repository.clearProduct();
 
-response.sendRedirect("welcome.jsp");
+response.sendRedirect("products.jsp");
 %>
