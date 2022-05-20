@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import = "java.util.Date" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -24,7 +25,7 @@
 
 <jsp:include page="menu.jsp" />
 
-<%! String greeting = "Welcome to Web Shopping Mall";
+<%! String greeting = "웹 쇼핑몰에 오신 것을 환영합니다.";
 String tagline = "Welcome to Web Market!"; %>
 
 <div class="p-5 bg-secondary text-white text-white">
@@ -46,12 +47,25 @@ String tagline = "Welcome to Web Market!"; %>
         SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss a");
         
         out.println("현재 접속 시간 : " + format.format(today));
+        
+      /*   session.setAttribute("name", "손영식");
+        session.setAttribute("age", 23);
+        
+        List<String> foods = new ArrayList<>();
+        
+        foods.add("라면");
+        foods.add("탕수육");
+        foods.add("짜장면");
+        
+        session.setAttribute("food", foods);
+        session.setMaxInactiveInterval(5); */
+        
         %>
 	</div>
     <hr>
 </div>
 
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="footer.jsp" />
 
 </body>
 
