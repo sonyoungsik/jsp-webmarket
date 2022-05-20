@@ -21,6 +21,12 @@ public class Product {
 	private long unitsInStock;
 	private String condition;
 	
+	
+//	public static void main(String[] args) {
+//		Product product = new Product(null, null, 0);
+//		product.hashCode();
+//	}
+//	
 	public Product() {
 		
 	}
