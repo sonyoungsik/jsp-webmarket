@@ -8,7 +8,16 @@ import dto.Product;
 public class ProductRepository {
 
 	private List<Product> products = new ArrayList<>();
+		
+	// 하나의 객체를 생성한 후, 인스턴스를 재사용하는 싱글턴 패턴
+	private static ProductRepository instance = new ProductRepository();
 	
+	public static ProductRepository getInstance() {
+		return instance;
+	}
+		
+	//싱글턴 패턴으로 생성자를 막고 다른 곳에서 변수 설정 및 초기화를 막을 수 있는 경우가 있음 private 가능
+		
 	public ProductRepository() {
 		
 		Product phone = new Product("P1234", "iPhone6s", 800000);
@@ -51,7 +60,17 @@ public class ProductRepository {
 				.get(); // 가장 먼저 걸린 녀석을 get합니다...
 	}
 	
+	// 상품 추가
 	
+	public void addProduct(Product product) {
+		products.add(product);
+	}
+	
+	// 상품 제거
+	
+	public void clearProduct() {
+		products.clear();
+	}
 	
 	
 	
