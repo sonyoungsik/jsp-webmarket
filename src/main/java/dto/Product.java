@@ -1,6 +1,6 @@
 package dto;
 
-import java.io.Serializable;
+//import java.io.Serializable;
 
 //모델 클래스
 //JSP : 자바빈즈 (getter/setter, 기본 생성자(매개변수 없음), Serializable - 주소값 지정)
@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 public class Product {
 	
-	private static final long serialVersionUID = 2867748905925104542L;
+//	private static final long serialVersionUID = 2867748905925104542L;
 
 	private String productId;
 	private String name;
